@@ -8,7 +8,7 @@ export const Navbar = styled("div", {
     marginRight: 30,
     marginLeft: 30,
     borderRadius: 10,
-    height: 72,
+    height: 60,
     boxShadow: '$lg',
     display: "flex",
     alignItems: "center",
