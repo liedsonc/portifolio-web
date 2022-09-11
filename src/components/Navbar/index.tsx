@@ -15,11 +15,8 @@ export const Navbar = ({ children, ...restprops }: Bar): JSX.Element => {
     return (
         <S.Navbar>
             <div
-                {...restprops}
-
-            >
+                {...restprops}>
                 {children}
-
             </div>
         </S.Navbar>
     );

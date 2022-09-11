@@ -4,7 +4,7 @@ import type * as Stitches from '@stitches/react';
 export const Navbar = styled("div", {
 
     width: "auto",
-    marginTop: 30,
+    marginTop: 15,
     marginRight: 30,
     marginLeft: 30,
     borderRadius: 10,
@@ -12,8 +12,8 @@ export const Navbar = styled("div", {
     boxShadow: '$lg',
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
-    cursor: 'pointer',
+    // justifyContent: "center",
+    // cursor: 'pointer',
     variants: {
         color: {
             primary: {
@@ -42,6 +42,13 @@ export const Navbar = styled("div", {
         shadow: true
     }
 
+})
+
+export const NavbarRight = styled("div", {
+    position: 'relative',
+    float: 'right',
+    marginRight: 'auto',
+    marginLeft: '0'
 })
 
 export type StyledNavbar = Stitches.VariantProps<typeof Navbar>;
