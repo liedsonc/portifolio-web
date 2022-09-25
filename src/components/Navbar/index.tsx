@@ -13,14 +13,11 @@ type Bar = Props & S.StyledNavbar
 
 export const Navbar = ({ children, ...restprops }: Bar): JSX.Element => {
     return (
-        <S.Navbar>
-            <div
-                {...restprops}
+        <S.Navbar {...restprops}>
 
-            >
-                {children}
+            {children}
 
-            </div>
+
         </S.Navbar>
     );
 }
