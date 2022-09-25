@@ -11,6 +11,7 @@ export const Navbar = styled("div", {
     marginLeft: 30,
     borderRadius: 10,
     height: 50,
+
     boxShadow: '$lg',
 
     // justifyContent: "center",
@@ -44,6 +45,7 @@ export const Navbar = styled("div", {
     }
 
 })
+
 
 export const NavbarRight = styled("div", {
     position: 'relative',
