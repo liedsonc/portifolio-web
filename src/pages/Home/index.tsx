@@ -7,10 +7,8 @@ import mainImg from "../../../public/assets/liedsoncT 1.svg"
 
 
 function Home() {
-    let i = 0;
-    let technologies = data.Technologies
-    console.log("Technologies")
 
+    let technologies = data.Technologies
 
     return (
         <S.Home>
@@ -32,7 +30,7 @@ function Home() {
                         <S.mainSubtitle>Front-end Developer</S.mainSubtitle>
                         <S.Tecnologies>
                             {
-                                data.Technologies.map(tech =>
+                                technologies.map(tech =>
                                     <img src={tech.img} alt={tech.title} />
                                 )
                             }
