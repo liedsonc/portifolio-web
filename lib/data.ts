@@ -1,5 +1,5 @@
 export const logo = {
-    img: "/assets/logo.png",
+    img: "/assets/logo.svg",
 }
 
 export const main = {
