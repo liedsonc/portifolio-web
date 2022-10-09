@@ -197,7 +197,8 @@ export const Buttons = styled("div", {
 export const callToAction = styled("button", {
     height: 42,
     weight: 152,
-    borderColor: "$secondary",
+    border: "none",
+
     backgroundColor: "$secondary",
     fontFamily: "JetBrains Mono",
     fontSize: 16,
@@ -205,6 +206,9 @@ export const callToAction = styled("button", {
     borderRadius: 10,
     paddingRight: 10,
     paddingLeft: 10,
+    '&:hover': {
+        backgroundColor: '$secondaryDark',
+    },
     // boxShadow: '3px 4px 4px  #1DB954',
     transform: "matrix(1, -0.01, 0.01, 1, 0, 0)",
     variants: {
@@ -226,6 +230,7 @@ export const aboutButton = styled("button", {
     height: 42,
     weight: 152,
     borderColor: "$secondary",
+    borderStyle: "solid",
     backgroundColor: "transparent",
     color: "$primary",
     fontFamily: "JetBrains Mono",
@@ -233,6 +238,9 @@ export const aboutButton = styled("button", {
     borderRadius: 10,
     paddingRight: 10,
     paddingLeft: 10,
+    '&:hover': {
+        backgroundColor: '$secondary',
+    },
     // boxShadow: '3px 4px 4px  #1DB954',
     transform: "matrix(1, -0.01, 0.01, 1, 0, 0)",
     variants: {
