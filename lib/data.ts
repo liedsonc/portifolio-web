@@ -13,22 +13,27 @@ export const WhoAmI = {
 
 export const Technologies = [
     {
+        id: "1",
         title: "javascript",
         img: "/assets/JS.svg"
     },
     {
+        id: "2",
         title: "HTML",
         img: "/assets/HTML.svg"
     },
     {
+        id: "3",
         title: "CSS",
         img: "/assets/CSS.svg"
     },
     {
+        id: "4",
         title: "TypeScript",
         img: "/assets/Typescript.svg"
     },
     {
+        id: "5",
         title: "React",
         img: "/assets/react.svg"
     },
