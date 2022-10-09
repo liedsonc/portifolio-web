@@ -6,17 +6,27 @@ export const Navbar = styled("div", {
     justifyContent: "space-between",
     alignItems: "center",
     width: "auto",
+    paddingRight: 15,
+    paddingLeft: 15,
     marginTop: 15,
-    marginRight: 30,
-    marginLeft: 30,
     borderRadius: 10,
-    height: 50,
+    height: 30,
 
     boxShadow: '$lg',
 
     // justifyContent: "center",
     // cursor: 'pointer',
     variants: {
+        size: {
+            d1: {
+
+                height: 50,
+                paddingRight: 20,
+                paddingLeft: 20,
+                fontSize: 25,
+            },
+
+        },
         color: {
             primary: {
                 backgroundColor: '$primaryLight',
@@ -30,6 +40,7 @@ export const Navbar = styled("div", {
                 backgroundColor: '$primaryLight',
                 color: '$white',
             },
+
         },
         shadow: {
             false: {
