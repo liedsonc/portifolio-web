@@ -135,7 +135,7 @@ export const { styled, getCssText, globalCss, theme } = createStitches({
         },
     },
     media: {
-        xs: "(max-width: 576px)",
+        xs: "(max-width: 639.99px)",
         sm: "(min-width: 640px)",
         md: "(min-width: 768px)",
         lg: "(min-width: 1024px)",
@@ -186,7 +186,7 @@ export const { styled, getCssText, globalCss, theme } = createStitches({
 
 
 export const resetCss = globalCss({
-    "*": { margin: 0, padding: 0 },
+    "*": { margin: 0, padding: 0, height: "100%", width: "auto", overflow: "hidden" },
     'html,body,button': {
         fontFamily: "$body",
         backgroundColor: "$bg",

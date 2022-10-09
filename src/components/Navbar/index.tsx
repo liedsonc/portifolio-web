@@ -13,7 +13,7 @@ type Bar = Props & S.StyledNavbar
 
 export const Navbar = ({ children, ...restprops }: Bar): JSX.Element => {
     return (
-        <S.Navbar {...restprops}>
+        <S.Navbar size={{ '@sm': 'd1' }} {...restprops}>
 
             {children}
 
