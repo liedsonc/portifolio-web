@@ -121,6 +121,7 @@ export const greeterDiv = styled("div", {
 
 export const mainTitle = styled("h1", {
     color: "$secondary",
+    fontSize: 50,
     variants: {
         size: {
             d1: {
@@ -135,6 +136,7 @@ export const mainTitle = styled("h1", {
 
 export const mainSubtitle = styled("h4", {
     color: "$accentLight",
+    fontSize: 24,
     marginTop: 18,
     variants: {
         size: {
@@ -167,6 +169,7 @@ export const Tecnologies = styled("div", {
 })
 
 export const Tech = styled("img", {
+    height: 30,
     variants: {
         size: {
             d1: {
