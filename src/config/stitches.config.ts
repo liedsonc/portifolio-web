@@ -186,7 +186,7 @@ export const { styled, getCssText, globalCss, theme } = createStitches({
 
 
 export const resetCss = globalCss({
-    "*": { margin: 0, padding: 0, height: "100%", width: "auto", overflow: "hidden" },
+    "*": { margin: 0, padding: 0, height: "100%", width: "auto", },
     'html,body,button': {
         fontFamily: "$body",
         backgroundColor: "$bg",
