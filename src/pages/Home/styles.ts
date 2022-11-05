@@ -3,7 +3,7 @@ import type * as Stitches from '@stitches/react';
 
 export const Home = styled("div", {
 
-    height: "100%",
+    height: "100vh",
     width: "100%",
     backgroundImage: "url('/assets/Eclipse-gray.svg'), url('/assets/Eclipse-green.svg') ",
     backgroundPosition: "left bottom, 5% center",

@@ -39,3 +39,30 @@ export const Technologies = [
         img: "/assets/react.svg"
     },
 ]
+
+export const Projects = [
+    {
+        id: "1",
+        title: "Primeiro projeto",
+        descrition: "Eu ut excepteur duis non laboris Lorem. Deserunt occaecat lab.",
+        url: "https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?w=1380&t=st=1667612074~exp=1667612674~hmac=2d36bc7a1b5d57da4ba4bb40709350edb501063d845700a77619da867521b1b4",
+
+
+    },
+    {
+        id: "2",
+        title: "Segundo projeto",
+        descrition: "Eu ut excepteur duis non laboris Lorem. Deserunt occaecat lab.",
+        url: "https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?w=1380&t=st=1667612074~exp=1667612674~hmac=2d36bc7a1b5d57da4ba4bb40709350edb501063d845700a77619da867521b1b4",
+
+    },
+    {
+        id: "3",
+        title: "Terceiro projeto",
+        descrition: "Eu ut excepteur duis non laboris Lorem. Deserunt occaecat lab.",
+        url: "https://img.freepik.com/free-vector/matrix-style-binary-code-digital-background-with-falling-numbers_1017-25336.jpg?w=996&t=st=1666555930~exp=1666556530~hmac=2feade659f688d4e8c47a13f52fcfdbeaf89919f797f428456b8cae181b681c1",
+
+    },
+
+
+]

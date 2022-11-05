@@ -8,8 +8,8 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
     css?: CSS
 }
 
-
 type Bar = Props & S.StyledNavbar
+
 
 export const Navbar = ({ children, ...restprops }: Bar): JSX.Element => {
     return (
