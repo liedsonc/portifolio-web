@@ -1,8 +1,16 @@
 import * as S from "./styles"
 import * as data from "../../../lib/data"
+
+
 export default function About() {
+
+
+
+
+
     return (
         <S.About>
+
             <S.main>
                 <S.AboutSection>
                     <S.textWrapper>
@@ -21,6 +29,9 @@ export default function About() {
 
                 </S.Banner>
             </S.main>
-        </S.About>
+
+        </S.About >
+
+
     )
 }
