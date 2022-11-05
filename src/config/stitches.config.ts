@@ -102,8 +102,8 @@ export const { styled, getCssText, globalCss, theme } = createStitches({
         },
         radius: {
             1: "4px",
-            2: "10px",
-            3: "13px",
+            2: "8px",
+            3: "12px",
             4: "32px",
             5: "64px",
             full: "9999px",
@@ -186,9 +186,16 @@ export const { styled, getCssText, globalCss, theme } = createStitches({
 
 
 export const resetCss = globalCss({
-    "*": { margin: 0, padding: 0, height: "100%", width: "auto", },
-    'html,body,button': {
+    "*": { margin: 0, padding: 0, boxSizing: "border-box" },
+    'html,body,#root': {
+        height: "100%",
         fontFamily: "$body",
         backgroundColor: "$bg",
+        overflowX: "hidden"
     },
+    'button': {
+        fontFamily: "$body",
+        backgroundColor: "$bg",
+        overflowX: "hidden"
+    }
 });

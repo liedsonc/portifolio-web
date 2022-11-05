@@ -3,7 +3,7 @@ import type * as Stitches from '@stitches/react';
 
 
 export const About = styled("section", {
-    height: "auto",
+    height: "100vh",
     width: "100%",
     backgroundImage: "url('/assets/Eclipse-gray1.svg'), url(''), url('') ",
     backgroundRepeat: "no-repeat",
@@ -72,4 +72,3 @@ export const Bannerimg = styled("img", {
     height: 426,
     width: 248
 })
-
