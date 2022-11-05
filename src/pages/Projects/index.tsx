@@ -4,7 +4,7 @@ import { Project } from '../../components/Project';
 import * as data from "../../../lib/data"
 // import { Container } from './styles';
 
-export const Projects = () => {
+function Projects() {
     let Projects = data.Projects
     return (
         <S.MainSection>
@@ -33,3 +33,5 @@ export const Projects = () => {
         </S.MainSection >
     );
 }
+
+export default Projects;
