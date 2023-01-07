@@ -11,6 +11,7 @@ export const About = styled("section", {
     backgroundSize: "300px",
     justifyContent: "center",
     paddingTop: 50,
+    paddingBottom: 50,
 
 
 
@@ -24,17 +25,30 @@ export const main = styled("main", {
     justifyContent: "center",
     marginRight: 30,
     marginLeft: 30,
+    variants: {
+        size: {
+            d1: {
+                display: "flex",
+                flexDirection: "column",
+            }
+        }
+    }
 })
 
 export const AboutSection = styled("section", {
-    alignItems: "center",
-    justifyContent: "center",
-    width: "auto",
+    width: "100%",
     height: "auto",
     marginColor: "white",
     marginRight: 30,
     marginLeft: 30,
     color: "$secondary",
+    variants: {
+        size: {
+            d1: {
+                marginLeft: 0,
+            }
+        }
+    }
 
 })
 
@@ -43,6 +57,15 @@ export const textWrapper = styled("div", {
     height: "auto",
     alignItems: "center",
     justifyContent: "center",
+    variants: {
+        size: {
+            d1: {
+                display: "flex",
+                flexDirection: "column",
+                width: "100%"
+            }
+        }
+    }
 
 })
 
@@ -51,6 +74,28 @@ export const title = styled("h1", {
     fontSize: "$heading",
     fontFamily: "JetBrains Mono",
 
+
+    variants: {
+        size: {
+            d1: {
+                fontSize: "$heading"
+
+            }
+        }
+
+    }
+})
+
+export const titleWrapper = styled("div", {
+    variants: {
+        size: {
+            d1: {
+                display: "flex",
+                justifyContent: "center",
+                alignContents: "center"
+            }
+        }
+    }
 })
 
 export const content = styled("p", {
@@ -58,12 +103,17 @@ export const content = styled("p", {
     fontSize: 20,
     fontFamily: "JetBrains Mono",
     marginTop: 50,
+    variants: {
+        size: {
+            d1: {
+                marginBottom: 20,
+            }
+        }
+    }
 })
 
 export const Banner = styled("div", {
     display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
     boxShadow: "-25px 25px #1DB954",
     marginRight: 30,
 })
@@ -71,4 +121,15 @@ export const Banner = styled("div", {
 export const Bannerimg = styled("img", {
     height: 426,
     width: 248
+})
+
+export const BannerWrapper = styled("div", {
+    variants: {
+        size: {
+            d1: {
+                display: "flex",
+                justifyContent: "center",
+            }
+        }
+    }
 })
