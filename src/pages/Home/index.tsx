@@ -32,20 +32,23 @@ function Home() {
 
 
                     <S.greeterDiv size={{ '@sm': 'd1' }}>
-                        <S.mainTitle size={{ '@xs': 'd1' }}>Hi!<br />I'm Liedson Correia</S.mainTitle>
-                        <S.mainSubtitle size={{ '@xs': 'd1' }}>Front-end Developer</S.mainSubtitle>
-                        <S.Tecnologies size={{ '@xs': 'd1' }} >
-                            {
-                                technologies.map(tech =>
-                                    <S.Tech
-                                        size={{ '@xs': 'd1' }}
-                                        key={tech.id}
-                                        src={tech.img}
-                                        alt={tech.title} />
-                                )
-                            }
+                        <div>
+                            <S.mainTitle size={{ '@xs': 'd1' }}>Hi!<br />I'm Liedson Correia</S.mainTitle>
+                            <S.mainSubtitle size={{ '@xs': 'd1' }}>Front-end Developer</S.mainSubtitle>
+                            <S.Tecnologies size={{ '@xs': 'd1' }} >
+                                {
+                                    technologies.map(tech =>
+                                        <S.Tech
+                                            size={{ '@xs': 'd1' }}
+                                            key={tech.id}
+                                            src={tech.img}
+                                            alt={tech.title} />
+                                    )
+                                }
 
-                        </S.Tecnologies >
+
+                            </S.Tecnologies >
+                        </div>
                         <S.Buttons size={{ '@xs': 'd1' }}>
                             <S.callToAction size={{ '@xs': 'd1' }}>
                                 Contact Me!
@@ -54,15 +57,12 @@ function Home() {
                                 About Me!
                             </S.aboutButton>
                         </S.Buttons>
+
                     </S.greeterDiv>
 
 
                 </S.main>
 
-
-                {/* <S.eclipseGreyDiv>
-                <S.eclipseGrey src={grayeclipse} />
-            </S.eclipseGreyDiv> */}
             </S.HomeSection>
         </S.Home >
     );

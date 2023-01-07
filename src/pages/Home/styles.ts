@@ -74,14 +74,13 @@ export const img = styled("img", {
 
 })
 export const main = styled("main", {
-    alignItems: "center",
-    justifyContent: "space-between",
+
     variants: {
         size: {
             d1: {
                 display: "flex",
                 justifyContent: "space-between",
-                flexDirection: "row-reverse;",
+                flexDirection: "row-reverse",
                 marginTop: "5%",
                 marginLeft: 20,
                 marginRight: 20,
@@ -96,7 +95,11 @@ export const main = styled("main", {
     }
 })
 export const greeterDiv = styled("div", {
-    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    height: "55vh",
+    width: "100%",
 
     variants: {
         size: {
