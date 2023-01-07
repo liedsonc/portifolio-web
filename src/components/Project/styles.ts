@@ -1,7 +1,16 @@
 import { styled } from '../../config/stitches.config';
 import type * as Stitches from '@stitches/react';
 
+
 export const Project = styled('div', {
+    // gap: 2,
+
+
+    // backgroundColor: "#D9D9D9",
+
+})
+
+export const Wrapper = styled("div", {
     display: 'flex',
     flexDirection: 'column',
     width: 450,
@@ -11,31 +20,27 @@ export const Project = styled('div', {
     fontFamily: "JetBrains Mono",
     boxShadow: " 0px 4px 4px rgba(217, 217, 217, 0.25)",
     overflow: "hidden",
-    gap: 2,
-
-
-    // backgroundColor: "#D9D9D9",
-
 })
+
+
 export const ProjectImg = styled('img', {
     height: 240,
 
     width: "100%",
     // flex: 1,
-    objectFit: 'cover',
+    objectFit: 'fill',
     overflow: 'hidden',
-
-
-
-
-
 });
+
+
+
+
 export const Details = styled('div', {
     width: "auto",
     height: "auto",
-    maxHeight: "70px",
+    maxHeight: "90px",
     backgroundColor: '$accent',
-    padding: "5px 30px 15px 30px",
+    padding: "5px 30px 20px 30px",
     position: "relative",
 });
 
