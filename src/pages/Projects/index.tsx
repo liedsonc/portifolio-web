@@ -6,15 +6,16 @@ import * as data from "../../../lib/data"
 
 function Projects() {
     let Projects = data.Projects
+
     return (
-        <S.MainSection>
+        <S.MainSection size={{ '@xs': 'd1' }}>
             <S.Heading>
                 <S.Title>Projects</S.Title>
             </S.Heading>
             {/* put this on his own section */}
             {/* Add a hover effect to the 'Projec't component and a padding to de details div */}
             <div style={{ alignItems: "center" }}>
-                <S.Projects>
+                <S.Projects size={{ '@xs': 'd1' }}>
                     {
                         Projects.map(p =>
                             <Project
@@ -22,9 +23,8 @@ function Projects() {
                                 title={p.title}
                                 description={p.descrition}
                                 cover={p.url}
+
                             />
-
-
                         )
                     }
                 </S.Projects>

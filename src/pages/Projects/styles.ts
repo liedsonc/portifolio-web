@@ -3,7 +3,16 @@ import type * as Stitches from '@stitches/react';
 
 export const MainSection = styled('div', {
     height: '100vh',
-    alignItems: 'center'
+    alignItems: 'center',
+    variants: {
+        size: {
+            d1: {
+                marginTop: 100
+                ,
+
+            }
+        }
+    }
 })
 
 export const Projects = styled("div", {
@@ -22,7 +31,9 @@ export const Projects = styled("div", {
     variants: {
         size: {
             d1: {
-                marginTop: 15
+                marginTop: 15,
+                display: "grid",
+                gridTemplateColumns: "auto",
 
             },
 
