@@ -7,7 +7,7 @@ export const main = {
 }
 
 export const WhoAmI = {
-    title: "Who am I?",
+    title: "About",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pellentesque risus. Phasellus auctor tortor a ligula tempus, quis vulputate lorem pulvinar. Duis elementum eleifend ultricies. Vestibulum efficitur tempor dolor.",
     img: "/assets/Bannerimg.png"
 }
@@ -45,8 +45,26 @@ export const Projects = [
         id: "1",
         title: "Primeiro projeto",
         descrition: "Eu ut excepteur duis non laboris Lorem. Deserunt occaecat lab.",
-        url: "https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?w=1380&t=st=1667612074~exp=1667612674~hmac=2d36bc7a1b5d57da4ba4bb40709350edb501063d845700a77619da867521b1b4",
+        url: "../assets/b1.jpg",
+        Techs:
+            [
+                {
+                    id: Technologies[0].id,
+                    title: Technologies[0].title,
+                    img: Technologies[4].img,
 
+                },
+                {
+                    id: Technologies[1].id,
+                    title: Technologies[1].title,
+                    img: Technologies[1].img,
+                },
+                {
+                    id: Technologies[2].id,
+                    title: Technologies[2].title,
+                    img: Technologies[2].img,
+                },
+            ]
 
     },
     {
