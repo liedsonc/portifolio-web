@@ -4,15 +4,9 @@ import type * as Stitches from '@stitches/react';
 export const MainSection = styled('div', {
     height: '100vh',
     alignItems: 'center',
-    variants: {
-        size: {
-            d1: {
-                marginTop: 100
-                ,
+    boxSizing: 'border-box',
+    marginBottom: 100,
 
-            }
-        }
-    }
 })
 
 export const Projects = styled("div", {
@@ -36,6 +30,12 @@ export const Projects = styled("div", {
                 gridTemplateColumns: "auto",
 
             },
+            d2: {
+                marginTop: 15,
+                display: "grid",
+                gridTemplateColumns: "auto auto",
+            }
+
 
         },
 
@@ -44,9 +44,17 @@ export const Projects = styled("div", {
 export const Heading = styled('div', {
     display: 'flex',
     justifyContent: 'center',
+    variants: {
+        size: {
+            d1: {
+                marginTop: 500,
+            }
+        }
+    }
 })
 export const Title = styled('h1', {
     fontSize: '$heading',
     color: '$secondary',
-    fontFamily: 'JetBrains Mono'
+    fontFamily: 'JetBrains Mono',
+
 })
