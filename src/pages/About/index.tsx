@@ -9,7 +9,7 @@ export default function About() {
 
 
     return (
-        <S.About>
+        <S.About id='About'>
 
             <S.main size={{ '@xs': 'd1' }}>
                 <S.AboutSection size={{ '@xs': 'd1' }}>
