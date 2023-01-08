@@ -7,8 +7,8 @@ export const main = {
 }
 
 export const WhoAmI = {
-    title: "About",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pellentesque risus. Phasellus auctor tortor a ligula tempus, quis vulputate lorem pulvinar. Duis elementum eleifend ultricies. Vestibulum efficitur tempor dolor.",
+    title: "About me",
+    content: "My name is Liedson Correia. I've been studying programming for 2 years, during this time I've been through technologies such as: Javascript, Python, Html, Css, React.js, React Native, Typescript, Node, Expo, Next.js, Linux, GitHub, Solidity, Blockchain, Slack, VSCode among others. I have experience mainly in the above mentioned javascript frameworks. I've participated in team projects using agile methods. I really like working in a team, and working with new things.",
     img: "/assets/Bannerimg.png"
 }
 
