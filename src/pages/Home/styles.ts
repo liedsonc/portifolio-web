@@ -8,7 +8,8 @@ export const Home = styled("div", {
     backgroundImage: "url('/assets/Eclipse-gray.svg'), url('/assets/Eclipse-green.svg') ",
     backgroundPosition: "left bottom, 5% center",
     backgroundSize: '300px',
-    backgroundRepeat: "no-repeat"
+    backgroundRepeat: "no-repeat",
+    boxSizing: "border-box"
 
 })
 
@@ -172,13 +173,19 @@ export const Tecnologies = styled("div", {
 })
 
 export const Tech = styled("img", {
-    height: 30,
+    transition: 0,
+    height: 50,
+
+    '&:hover': {
+        height: 52,
+    },
     variants: {
         size: {
             d1: {
                 height: 20,
                 width: "auto",
             },
+
 
         },
 
@@ -272,6 +279,28 @@ export const aboutButton = styled("button", {
     }
 })
 
+export const Links = styled('div', {
+    display: 'flex',
+    float: 'right',
+    alignItems: 'center',
+    textDecoration: 'none',
+    gap: 50,
+    variants: {
+        size: {
+            d1: {
+                display: 'none'
+            }
+        }
+    }
 
+})
+export const TextLink = styled('li', {
+    listStyle: 'none',
+    color: '$secondary'
+})
+export const Link = styled('a', {
 
+    textDecoration: 'none',
+    color: '$secondary'
+})
 export type StyledHome = Stitches.VariantProps<typeof Home>;
