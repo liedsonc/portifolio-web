@@ -303,4 +303,8 @@ export const Link = styled('a', {
     textDecoration: 'none',
     color: '$secondary'
 })
+export const Social = styled('div', {
+    display: 'flex',
+    alignItems: 'center'
+})
 export type StyledHome = Stitches.VariantProps<typeof Home>;

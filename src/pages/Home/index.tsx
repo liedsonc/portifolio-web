@@ -33,6 +33,13 @@ function Home() {
                         {/* <S.Link href='#Projects'>
                             <S.TextLink>Projects</S.TextLink>
                         </S.Link> */}
+                        <a href="https://github.com/liedsonc">
+                            <S.Social >
+
+                                <S.NavbarImg size={{ '@sm': 'd1' }} src={data.github.img} />
+
+                            </S.Social>
+                        </a>
                     </S.Links>
                 </Navbar>
                 <S.main size={{ '@sm': 'd1' }}>
