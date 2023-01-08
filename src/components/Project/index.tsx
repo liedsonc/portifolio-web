@@ -29,16 +29,16 @@ export const Project = ({
 
     return (
 
-        <S.Project >
-            <S.Wrapper>
+        <S.Project   >
+            <S.Wrapper size={{ '@xs': 'd1' }} >
 
 
-                <S.ProjectImg src={cover} />
+                <S.ProjectImg src={cover} size={{ '@xs': 'd1' }} />
 
 
-                <S.Details >
-                    <S.Title>{title}</S.Title>
-                    <S.Description>{description}</S.Description>
+                <S.Details>
+                    <S.Title >{title}</S.Title>
+                    <S.Description >{description}</S.Description>
                 </S.Details>
             </S.Wrapper>
 

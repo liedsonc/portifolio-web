@@ -12,6 +12,7 @@ export const About = styled("section", {
     justifyContent: "center",
     paddingTop: 50,
     paddingBottom: 50,
+    boxSizing: "border-box"
 
 
 

@@ -1,11 +1,16 @@
 import * as S from "./styles";
 import { CSS } from "@stitches/react";
 import { Navbar } from '../../components/Navbar';
-import { ReactNode, useState } from 'react';
+import { ReactNode, useState, useRef } from 'react';
 import * as data from "../../../lib/data"
 import mainImg from "/assets/liedsoncT 1.svg"
 import menu from "/assets/menu.png"
 import grayeclipse from "/assets/Eclipse-gray.svg"
+
+
+
+
+
 
 function Home() {
 
@@ -18,7 +23,17 @@ function Home() {
             <S.HomeSection>
                 <Navbar >
                     <S.NavbarImg size={{ '@sm': 'd1' }} src={data.logo.img} />
-
+                    <S.Links size={{ '@xs': 'd1' }}>
+                        <S.Link style={{ textDecoration: 'none', color: '$primary' }} href='/'>
+                            <S.TextLink>Home</S.TextLink>
+                        </S.Link>
+                        <S.Link href="#About">
+                            <S.TextLink>About</S.TextLink>
+                        </S.Link>
+                        <S.Link href='#Projects'>
+                            <S.TextLink>Projects</S.TextLink>
+                        </S.Link>
+                    </S.Links>
                 </Navbar>
                 <S.main size={{ '@sm': 'd1' }}>
 
@@ -34,15 +49,18 @@ function Home() {
                     <S.greeterDiv size={{ '@sm': 'd1' }}>
                         <div>
                             <S.mainTitle size={{ '@xs': 'd1' }}>Hi!<br />I'm Liedson Correia</S.mainTitle>
-                            <S.mainSubtitle size={{ '@xs': 'd1' }}>Front-end Developer</S.mainSubtitle>
+                            <S.mainSubtitle size={{ '@xs': 'd1' }}>Front-end and Mobile Developer</S.mainSubtitle>
                             <S.Tecnologies size={{ '@xs': 'd1' }} >
                                 {
                                     technologies.map(tech =>
                                         <S.Tech
+                                            title={tech.title}
                                             size={{ '@xs': 'd1' }}
                                             key={tech.id}
                                             src={tech.img}
-                                            alt={tech.title} />
+                                            alt={tech.title}
+
+                                        />
                                     )
                                 }
 
@@ -50,12 +68,16 @@ function Home() {
                             </S.Tecnologies >
                         </div>
                         <S.Buttons size={{ '@xs': 'd1' }}>
-                            <S.callToAction size={{ '@xs': 'd1' }}>
-                                Contact Me!
-                            </S.callToAction>
-                            <S.aboutButton size={{ '@xs': 'd1' }}>
-                                About Me!
-                            </S.aboutButton>
+                            <a href='mailto:liedsonpt@outlook.pt'>
+                                <S.callToAction size={{ '@xs': 'd1' }}>
+                                    Contact Me!
+                                </S.callToAction>
+                            </a>
+                            <a href='#About' >
+                                <S.aboutButton size={{ '@xs': 'd1' }}>
+                                    About Me!
+                                </S.aboutButton>
+                            </a>
                         </S.Buttons>
 
                     </S.greeterDiv>

@@ -38,6 +38,16 @@ export const Technologies = [
         title: "React",
         img: "/assets/react.svg"
     },
+    {
+        id: "6",
+        title: "Expo",
+        img: "/assets/expo.svg"
+    },
+    {
+        id: "7",
+        title: "Next.js",
+        img: "/assets/nextjs.png"
+    },
 ]
 
 export const Projects = [

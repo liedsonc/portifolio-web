@@ -136,6 +136,7 @@ export const { styled, getCssText, globalCss, theme } = createStitches({
     },
     media: {
         xs: "(max-width: 639.99px)",
+        iphoneSE: "(max-width: 380px)",
         sm: "(min-width: 640px)",
         md: "(min-width: 768px)",
         lg: "(min-width: 1024px)",
@@ -191,7 +192,9 @@ export const resetCss = globalCss({
         height: "100%",
         fontFamily: "$body",
         backgroundColor: "$bg",
-        overflowX: "hidden"
+        overflowX: "hidden",
+        scrollBehavior: "smooth",
+        boxSizing: "border-box"
     },
     'button': {
         fontFamily: "$body",
