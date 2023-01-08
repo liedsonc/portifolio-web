@@ -30,9 +30,9 @@ function Home() {
                         <S.Link href="#About">
                             <S.TextLink>About</S.TextLink>
                         </S.Link>
-                        <S.Link href='#Projects'>
+                        {/* <S.Link href='#Projects'>
                             <S.TextLink>Projects</S.TextLink>
-                        </S.Link>
+                        </S.Link> */}
                     </S.Links>
                 </Navbar>
                 <S.main size={{ '@sm': 'd1' }}>
