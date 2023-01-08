@@ -1,6 +1,9 @@
 export const logo = {
     img: "/assets/logo.svg",
 }
+export const github = {
+    img: "/assets/github-logo.png",
+}
 
 export const main = {
     img: "/assets/mainImg.png",
