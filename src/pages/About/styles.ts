@@ -5,7 +5,7 @@ import type * as Stitches from '@stitches/react';
 export const About = styled("section", {
     height: "100vh",
     width: "100%",
-    backgroundImage: "url('/assets/Eclipse-gray1.svg'), url(''), url('') ",
+    // backgroundImage: "url('/assets/Eclipse-gray1.svg'), url(''), url('') ",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "left top,left top,left top ",
     backgroundSize: "300px",

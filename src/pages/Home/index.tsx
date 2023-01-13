@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { CSS } from "@stitches/react";
 import { Navbar } from '../../components/Navbar';
-import { ReactNode, useState, useRef } from 'react';
+import { ReactNode, useState, useRef, useEffect } from 'react';
 import * as data from "../../../lib/data"
 import mainImg from "/assets/liedsoncT 1.svg"
 import menu from "/assets/menu.png"
@@ -11,8 +11,44 @@ import grayeclipse from "/assets/Eclipse-gray.svg"
 
 
 
-
 function Home() {
+
+
+    const [text, setText] = useState("")
+    const [fullText, setFullText] = useState("Hi!\nI'm Liedson Correia")
+    const [index, setIndex] = useState(0)
+    const [text1, setText1] = useState("")
+    const [fullText1, setFullText1] = useState("Front-end Web and Mobile Developer")
+    const [index1, setIndex1] = useState(0)
+
+
+
+    console.log(fullText1)
+    useEffect(() => {
+        if (index < fullText.length) {
+            setTimeout(() => {
+                setText(text + fullText[index])
+                setIndex(index + 1)
+            }, 40)
+        }
+
+
+
+    }, [index])
+
+    useEffect(() => {
+        if (index1 < fullText1.length) {
+            setTimeout(() => {
+                setText1(text1 + fullText1[index1])
+                setIndex1(index1 + 1)
+            }, 40)
+        }
+
+
+
+    }, [index1])
+
+
 
     let technologies = data.Technologies
 
@@ -22,7 +58,9 @@ function Home() {
 
             <S.HomeSection>
                 <Navbar >
-                    <S.NavbarImg size={{ '@sm': 'd1' }} src={data.logo.img} />
+                    <S.LogoDiv href='/' >
+                        <S.NavbarImg size={{ '@sm': 'd1' }} src={data.logo.img} />
+                    </S.LogoDiv>
                     <S.Links size={{ '@xs': 'd1' }}>
                         <S.Link style={{ textDecoration: 'none', color: '$primary' }} href='/'>
                             <S.TextLink>Home</S.TextLink>
@@ -55,8 +93,8 @@ function Home() {
 
                     <S.greeterDiv size={{ '@sm': 'd1' }}>
                         <div>
-                            <S.mainTitle size={{ '@xs': 'd1' }}>Hi!<br />I'm Liedson Correia</S.mainTitle>
-                            <S.mainSubtitle size={{ '@xs': 'd1' }}>Front-end and Mobile Developer</S.mainSubtitle>
+                            <S.mainTitle size={{ '@xs': 'd1' }}>{text}</S.mainTitle>
+                            <S.mainSubtitle size={{ '@xs': 'd1' }}>{text1}</S.mainSubtitle>
                             <S.Tecnologies size={{ '@xs': 'd1' }} >
                                 {
                                     technologies.map(tech =>

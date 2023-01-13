@@ -11,8 +11,8 @@ export const Navbar = styled("div", {
     marginTop: 15,
     borderRadius: 10,
     height: 30,
-
-    boxShadow: '$lg',
+    shadow: '$xl',
+    boxShadow: '$xl',
 
     // justifyContent: "center",
     // cursor: 'pointer',

@@ -5,10 +5,12 @@ export const Home = styled("div", {
 
     height: "100vh",
     width: "100%",
-    backgroundImage: "url('/assets/Eclipse-gray.svg'), url('/assets/Eclipse-green.svg') ",
-    backgroundPosition: "left bottom, 5% center",
-    backgroundSize: '300px',
-    backgroundRepeat: "no-repeat",
+    // backgroundImage: "url('/assets/Eclipse-gray.svg'), url('/assets/Eclipse-green.svg') ",
+    // backgroundPosition: "left bottom, 5% center",
+    // backgroundSize: '300px',
+    // backgroundRepeat: "no-repeat",
+
+    // background: "linear-gradient(0deg, rgba(23,148,67,1) 13%, rgba(62,96,74,1) 68%, rgba(77,77,77,1) 94%)",
     boxSizing: "border-box"
 
 })
@@ -101,6 +103,7 @@ export const greeterDiv = styled("div", {
     justifyContent: "space-between",
     height: "55vh",
     width: "100%",
+    whiteSpace: "pre-wrap",
 
     variants: {
         size: {
@@ -184,6 +187,9 @@ export const Tech = styled("img", {
             d1: {
                 height: 20,
                 width: "auto",
+                '&:hover': {
+                    height: 22,
+                },
             },
 
 
@@ -306,5 +312,10 @@ export const Link = styled('a', {
 export const Social = styled('div', {
     display: 'flex',
     alignItems: 'center'
+})
+export const LogoDiv = styled('a', {
+    display: 'flex',
+    alignItems: 'center',
+
 })
 export type StyledHome = Stitches.VariantProps<typeof Home>;

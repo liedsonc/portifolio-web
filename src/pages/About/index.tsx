@@ -1,10 +1,35 @@
 import * as S from "./styles"
 import * as data from "../../../lib/data"
-
+import React, { useState, useEffect } from 'react'
 
 export default function About() {
 
+    // const [text, setText] = useState("")
+    // const [fullText, setFullText] = useState(data.WhoAmI.title)
+    // const [index, setIndex] = useState(0)
+    // const [text1, setText1] = useState("")
+    // const [fullText1, setFullText1] = useState(data.WhoAmI.content)
+    // const [index1, setIndex1] = useState(0)
 
+    // console.log(text)
+    // useEffect(() => {
+    //     if (index < fullText.length) {
+    //         setTimeout(() => {
+    //             setText(text + fullText[index])
+    //             setIndex(index + 1)
+    //         }, 40)
+    //     }
+
+
+    // }, [index])
+    // useEffect(() => {
+    //     if (index1 < fullText1.length) {
+    //         setTimeout(() => {
+    //             setText1(text1 + fullText1[index1])
+    //             setIndex1(index1 + 1)
+    //         }, 40)
+    //     }
+    // }, [index1])
 
 
 
