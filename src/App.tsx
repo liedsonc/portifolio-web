@@ -3,6 +3,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import * as data from "../lib/data"
 import Projects from "./pages/Projects";
+import Footer from "./components/Footer";
+import { Project } from "./components/Project";
 
 resetCss();
 function App() {
@@ -12,7 +14,9 @@ function App() {
     <div className="App">
       <Home />
       <About />
-      {/* <Projects /> */}
+      <Projects />
+      <Footer />
+
     </div>
   )
 }

@@ -23,6 +23,9 @@ function Home() {
 
 
 
+
+
+
     console.log(fullText1)
     useEffect(() => {
         if (index < fullText.length) {

@@ -29,7 +29,7 @@ export const Navbar = styled("div", {
         },
         color: {
             primary: {
-                backgroundColor: '$primaryLight',
+                background: "rgba(217, 217, 217, 0.30)",
                 color: "$white"
             },
             secondary: {

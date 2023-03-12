@@ -302,7 +302,10 @@ export const Links = styled('div', {
 })
 export const TextLink = styled('li', {
     listStyle: 'none',
-    color: '$secondary'
+    color: '$black',
+    '&:hover': {
+        color: '$secondary'
+    },
 })
 export const Link = styled('a', {
 
