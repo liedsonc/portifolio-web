@@ -14,6 +14,7 @@ export const Navbar = styled("div", {
     shadow: '$xl',
     boxShadow: '$xl',
 
+
     // justifyContent: "center",
     // cursor: 'pointer',
     variants: {

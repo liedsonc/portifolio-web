@@ -9,6 +9,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
     title: string,
     description: string,
     cover: string,
+    link?: string,
     techs: string[],
 
 
@@ -19,6 +20,7 @@ interface TechType {
     id: string,
     title: string,
     img: string,
+    link: string
 }
 
 
@@ -32,6 +34,7 @@ export const Project = ({
     title,
     description,
     cover,
+    link,
     techs,
     ...restprops
 }: ProjectProps): JSX.Element => {
@@ -58,36 +61,37 @@ export const Project = ({
     }, [])
     return (
 
-        <S.Project   >
-            <S.Wrapper size={{ '@xs': 'd1' }} >
+        <S.Project    >
+            <a href={link} target='_blank' >
+                <S.Wrapper size={{ '@xs': 'd1' }} >
 
 
-                <S.ProjectImg src={cover} size={{ '@xs': 'd1' }} />
-                <S.TechnologiesDiv>
-                    <S.Tecnologies size={{ '@xs': 'd1' }} >
-                        {
-                            matchedTechs.map(tech =>
-                                <S.Tech
-                                    title={tech.title}
-                                    size={{ '@xs': 'd1' }}
-                                    key={tech.id}
-                                    src={tech.img}
-                                    alt={tech.title}
+                    <S.ProjectImg src={cover} size={{ '@xs': 'd1' }} />
+                    <S.TechnologiesDiv>
+                        <S.Tecnologies size={{ '@xs': 'd1' }} >
+                            {
+                                matchedTechs.map(tech =>
+                                    <S.Tech
+                                        title={tech.title}
+                                        size={{ '@xs': 'd1' }}
+                                        key={tech.id}
+                                        src={tech.img}
+                                        alt={tech.title}
 
-                                />
-                            )
-                        }
+                                    />
+                                )
+                            }
 
 
-                    </S.Tecnologies >
+                        </S.Tecnologies >
 
-                </S.TechnologiesDiv>
-                <S.Details>
-                    <S.Title >{title}</S.Title>
-                    <S.Description >{description}</S.Description>
-                </S.Details>
-            </S.Wrapper>
-
+                    </S.TechnologiesDiv>
+                    <S.Details>
+                        <S.Title >{title}</S.Title>
+                        <S.Description >{description}</S.Description>
+                    </S.Details>
+                </S.Wrapper>
+            </a>
         </S.Project >
     )
 }

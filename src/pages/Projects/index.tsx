@@ -12,12 +12,13 @@ function Projects() {
 
 
     return (
-        <S.MainSection id='Projects'>
+        <S.MainSection size={{ "@xs": "d1" }} id='Projects'>
             <S.Heading size={{ '@iphoneSE': 'd1' }}>
-                <S.Title>Projects</S.Title>
+                <S.Title size={{ "@xs": "d1" }}>Projects</S.Title>
             </S.Heading>
             <div style={{ alignItems: "center" }}>
                 <S.Projects size={{ '@xs': 'd1', '@sm': 'd2' }}>
+
                     {
                         Projects.map(p =>
                             <Project
@@ -26,6 +27,7 @@ function Projects() {
                                 description={p.descrition}
                                 cover={p.url}
                                 techs={p.tech}
+                                link={p.link}
                             />
                         )
                     }

@@ -6,6 +6,19 @@ export const MainSection = styled('div', {
     alignItems: 'center',
     boxSizing: 'border-box',
     marginBottom: 100,
+    variants: {
+        size: {
+            d1: {
+
+                paddingTop: "$7",
+                marginBottom: "$8"
+
+            }
+
+
+        },
+
+    }
 
 })
 
@@ -28,12 +41,14 @@ export const Projects = styled("div", {
                 marginTop: 15,
                 display: "grid",
                 gridTemplateColumns: "auto",
+                paddingTop: "$5"
+
 
             },
             d2: {
                 marginTop: 15,
                 display: "grid",
-                gridTemplateColumns: "auto auto",
+                gridTemplateColumns: "auto auto auto",
             }
 
 
@@ -56,5 +71,15 @@ export const Title = styled('h1', {
     fontSize: '$heading',
     color: '$secondary',
     fontFamily: 'JetBrains Mono',
+    variants: {
+        size: {
+            d1: {
+                paddingTop: "$7"
+            }
+        }
+    }
+
+
+
 
 })

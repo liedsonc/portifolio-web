@@ -231,7 +231,7 @@ export const callToAction = styled("button", {
         height: 40,
         weight: 150,
     },
-    // boxShadow: '3px 4px 4px  #1DB954',
+    boxShadow: '3px 4px 4px  #1DB954',
     transform: "matrix(1, -0.01, 0.01, 1, 0, 0)",
     variants: {
         size: {
@@ -249,6 +249,50 @@ export const callToAction = styled("button", {
     }
 
 })
+export const callToActionNav = styled("button", {
+    height: 40,
+    weight: 152,
+    border: "none",
+    boxShadow: "$sm",
+    backgroundColor: "$secondary",
+    fontFamily: "JetBrains Mono",
+    fontSize: 16,
+    color: '$white',
+    borderRadius: 10,
+    paddingRight: 20,
+    paddingLeft: 20,
+    '&:hover': {
+        backgroundColor: '$secondaryDark',
+    }, '&:active': {
+        height: 40,
+        weight: 150,
+    },
+    // boxShadow: '3px 4px 4px  #1DB954',
+    variants: {
+        size: {
+            xs: {
+                display: 'none'
+
+            },
+
+        },
+
+    }
+
+})
+
+export const HamburgerDiv = styled("div", {
+    display: 'none',
+    variants: {
+        size: {
+            xs: {
+                display: 'flex'
+            }
+        }
+    }
+})
+
+
 export const aboutButton = styled("button", {
     height: 42,
     weight: 152,
@@ -269,7 +313,7 @@ export const aboutButton = styled("button", {
         weight: 150,
     },
 
-    // boxShadow: '3px 4px 4px  #1DB954',
+    boxShadow: '3px 4px 4px  #1DB954',
     transform: "matrix(1, -0.01, 0.01, 1, 0, 0)",
     variants: {
         size: {
@@ -288,6 +332,7 @@ export const aboutButton = styled("button", {
 export const Links = styled('div', {
     display: 'flex',
     float: 'right',
+    height: '100%',
     alignItems: 'center',
     textDecoration: 'none',
     gap: 50,
@@ -302,15 +347,19 @@ export const Links = styled('div', {
 })
 export const TextLink = styled('li', {
     listStyle: 'none',
-    color: '$black',
-    '&:hover': {
-        color: '$secondary'
-    },
+    color: '$white',
+
 })
 export const Link = styled('a', {
 
     textDecoration: 'none',
-    color: '$secondary'
+    color: '$secondary',
+    height: '100%',
+    padding: 10,
+    '&:hover': {
+        backgroundColor: '$secondaryDark'
+    },
+
 })
 export const Social = styled('div', {
     display: 'flex',
@@ -321,4 +370,19 @@ export const LogoDiv = styled('a', {
     alignItems: 'center',
 
 })
+
+export const MenuBarDiv = styled('div', {
+    width: "100%",
+    display: "flex",
+    justifyContent: "flex-end",
+
+})
+
+
+export const LinkDiv = styled("div", {
+    display: "flex",
+    textAlign: 'center',
+})
+
+
 export type StyledHome = Stitches.VariantProps<typeof Home>;

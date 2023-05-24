@@ -39,6 +39,7 @@ export const { styled, getCssText, globalCss, theme } = createStitches({
             subheading: "28px",
             heading: "58px",
             medium: "18px",
+            footerTitle: "40px",
             large: "50px",
 
         },
@@ -189,17 +190,20 @@ export const { styled, getCssText, globalCss, theme } = createStitches({
 export const resetCss = globalCss({
     "*": { margin: 0, padding: 0, boxSizing: "border-box" },
     'html,body,#root': {
-        height: "100%",
+        height: "100vh",
         fontFamily: "$body",
 
         background: "linear-gradient(0deg, rgba(23,148,67,1) 13%, rgba(62,96,74,1) 37%, rgba(103,103,103,1) 94%)",
+        // background: "#000",
         overflowX: "hidden",
         scrollBehavior: "smooth",
-        boxSizing: "border-box"
+        boxSizing: "border-box",
+
     },
     'button': {
         fontFamily: "$body",
         backgroundColor: "$bg",
         overflowX: "hidden"
-    }
+    },
+
 });

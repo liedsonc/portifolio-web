@@ -49,33 +49,40 @@ export const Technologies = [
     {
         id: "7",
         title: "Next.js",
-        img: "/assets/nextjs.png"
+        img: "/assets/nextjs.svg"
+    },
+    {
+        id: "8",
+        title: "Solidity",
+        img: "/assets/solidity.svg"
     },
 ]
 
 export const Projects = [
     {
         id: "1",
-        title: "Primeiro projeto",
-        descrition: "Eu ut excepteur duis non laboris Lorem. Deserunt occaecat lab.",
-        url: "../assets/b1.jpg",
-        tech: ['1', '6', '3']
-
+        title: "Blog",
+        descrition: "CRUD app using json api.",
+        url: "https://user-images.githubusercontent.com/87288153/227056340-4497b62e-f09b-41ed-b2e0-b0167f94552b.png",
+        link: "https://github.com/liedsonc/curso-react",
+        tech: ['1', '5', '4', '3', '2']
     },
     {
         id: "2",
-        title: "Segundo projeto",
-        descrition: "Eu ut excepteur duis non laboris Lorem. Deserunt occaecat lab.",
-        url: "https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?w=1380&t=st=1667612074~exp=1667612674~hmac=2d36bc7a1b5d57da4ba4bb40709350edb501063d845700a77619da867521b1b4",
-        tech: ['3', '7', '2']
+        title: "Vending Machine",
+        descrition: "A donut vending machine using blockchain. Connected to MetaMask.",
+        url: "https://user-images.githubusercontent.com/87288153/230697958-00c27e9e-cdfb-41fa-956b-45cccb2c0d6c.png",
+        link: "https://github.com/liedsonc/vending-machine-app",
+        tech: ['1', '2', '3', '5', '7', '8']
 
     },
     {
         id: "3",
-        title: "Terceiro projeto",
-        descrition: "Eu ut excepteur duis non laboris Lorem. Deserunt occaecat lab.",
-        url: "https://img.freepik.com/free-vector/matrix-style-binary-code-digital-background-with-falling-numbers_1017-25336.jpg?w=996&t=st=1666555930~exp=1666556530~hmac=2feade659f688d4e8c47a13f52fcfdbeaf89919f797f428456b8cae181b681c1",
-        tech: ['7', '2', '5']
+        title: "Event Manager",
+        descrition: "Mobile app for Android and IOS. In collaboration with Akira. ",
+        url: "/assets/aem1.jpg",
+        link: "https://akira-io.com",
+        tech: ['1', '4', '5', '6']
 
     },
 

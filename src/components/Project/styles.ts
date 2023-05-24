@@ -4,11 +4,11 @@ import type * as Stitches from '@stitches/react';
 
 export const Project = styled('div', {
     zIndex: 5,
-    // '&:hover': {
-    //     scale: '115%',
-    //     filter: 'brightness(50%)',
-    //     transitionDelay: '0.1s',
-    // },
+    '&:hover': {
+        scale: '105%',
+        filter: 'brightness(50%)',
+        transitionDelay: '0.1s',
+    },
 })
 export const TechnologiesDiv = styled('div', {
     display: 'flex',
